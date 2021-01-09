@@ -37,35 +37,8 @@ body {
     padding-left: 5vw;
 }
 /*DESCRIPTION*/
-/* 
-.des {
-    width: 80%;
-    position: relative;
-    font-size: 150%;
-    font-family: Poor Richard;
-    color: rgb(253, 253, 253);
 
-    margin-bottom: 7%;
-    margin-top: 10vh;
-}
-#headofdes {
-    color: rgb(64, 109, 255);
 
-    position: relative;
-    font-family: Viner Hand ITC;
-
-    font-size: 150%;
-    text-shadow: 2px 4px 4px #000000;
-}
-.despo {
-    padding-top: 10%;
-    float: left;
-    display: flex;
-    padding-bottom: 10%;
-}
-.desimg {
-    width: 40%;
-} */
 
 .about {
     display: flex;
