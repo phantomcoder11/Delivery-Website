@@ -232,7 +232,7 @@ html {
     display: none;
 }
 
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 548px) {
     div#myTopnav {
         position: absolute;
     }
