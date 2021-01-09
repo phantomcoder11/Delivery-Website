@@ -29,20 +29,15 @@ body {
     display: block;
 }
 
-/*
-LOGO*/
 #RRR {
     margin-top: 13vh;
     position: absolute;
     width: 20vw;
     height: 25vh;
     padding-left: 5vw;
-
-    /* margin-left: 20%;
- margin-bottom: 10%;*/
 }
 /*DESCRIPTION*/
-
+/* 
 .des {
     width: 80%;
     position: relative;
@@ -70,6 +65,38 @@ LOGO*/
 }
 .desimg {
     width: 40%;
+} */
+
+.about {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: auto auto;
+    padding-top: 10rem;
+}
+.logo-side {
+    width: 40%;
+}
+
+.image {
+    background-image: url('img/deslogo.png');
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.content {
+    transform: translate(10%, 0%);
+    max-width: 50%;
+}
+.head {
+    text-align: left;
+    font-size: 3rem;
+    color: white;
+}
+.text {
+    font-size: 1.4rem;
+    color: white;
 }
 
 .comp {
@@ -110,18 +137,6 @@ LOGO*/
     padding-top: 10%;
 }
 
-/* @-webkit-keyframes Gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-} */
-
 .media li {
     list-style: none;
     margin: 30px 25px;
@@ -150,9 +165,9 @@ LOGO*/
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 960px) {
     .media {
-        display: none;
+        left: 23vw;
     }
 }
 
@@ -192,6 +207,7 @@ html {
     height: 100%;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .topnav {
