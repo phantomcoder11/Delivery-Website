@@ -1,3 +1,14 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  li {
+    list-style: none;
+  }
+  
 body {
     background-image: url('img/black.jpg');
     background-repeat: no-repeat;
@@ -40,32 +51,32 @@ body {
 /*DESCRIPTION*/
 
 .about {
-    display: flex;
+    /* display: inline;
     width: 100vw;
-    height: 100vh;
+    height: 100vh; */
     margin: auto auto;
     padding-top: 10rem;
 }
 .logo-side {
     width: 40%;
 }
-*/ .about {
+.about {
     display: flex;
     width: 100vw;
-    height: 100vh;
-    margin: auto auto;
-    padding-top: 10rem;
+    height: fit-content;
+    /* margin: auto auto; */
+    padding: 5rem 2rem;
 }
 .logo-side {
     width: 40%;
 }
 
 .image {
-    background-image: url('img/deslogo.png');
+    /* background-image: url('img/deslogo.png'); */
     width: 100%;
     height: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
+    /* background-size: contain;
+    background-repeat: no-repeat; */
 }
 .content {
     transform: translate(10%, 0%);
@@ -221,28 +232,115 @@ html {
     display: none;
 }
 
-@media screen and (max-width: 900px) {
-    .topnav a:not(:first-child) {
-        display: none;
-    }
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .topnav.responsive {
-        position: relative;
-    }
-    .topnav.responsive .icon {
+@media screen and (max-width: 565px) {
+    div#myTopnav {
         position: absolute;
-        right: 0;
-        top: 0;
     }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
+    nav#headerNav {
+        width: 25rem;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -25rem;
+        background-color: rgba(34, 110, 250, 0.9);;
+        text-align: center;
+        z-index: 999;
+      }
+    
+      .clicked {
+        left: 55%;
+      }
+      .header__main-nav--hamburger {
+        width: 3rem;
+        height: 3rem;
+        position: fixed;
+        top: 2rem;
+        right: 0;
+        cursor: pointer;
+        background-color: rgb(34, 110, 250);;
+        padding: 0.5rem;
+        border-top-left-radius: 30%;
+        border-bottom-left-radius: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .line {
+        width: 100%;
+        height: 0.15rem;
+        background-color: white;
+        border-radius: 0.1rem;
+        transition: all 0.4s ease-in-out;
+      }
+      ul.headerNavLinks {
+        position: absolute;
+        top: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      ul.headerNavLinks li {
+        margin-bottom: 4vh;
+        margin-left: 6vw;
+      }
+      .clicked .line-1 {
+        transform: rotateZ(-405deg) translate(-0.48rem, 0.36rem);
+      }
+      .clicked .line-2 {
+        opacity: 0;
+      }
+      .clicked .line-3 {
+        transform: rotateZ(405deg) translate(-0.48rem, -0.36rem);
+      }
+      ul.headerNavLinks li {
+        opacity: 0;
+      }
+      ul.headerNavLinks li:nth-child(1) {
+        transition: all 0.5s ease-in-out 0.2s;
+      }
+      ul.headerNavLinks li:nth-child(2) {
+        transition: all 0.5s ease-in-out 0.4s;
+      }
+      ul.headerNavLinks li:nth-child(3) {
+        transition: all 0.5s ease-in-out 0.6s;
+      }
+      ul.headerNavLinks li:nth-child(4) {
+        transition: all 0.5s ease-in-out 0.8s;
+      }
+      ul.headerNavLinks li.fade {
+        opacity: 1;
+      }
+    
+}
+@media screen and (max-width:800px){
+    div.about{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+    }
+    .content{
+        text-align: center;
+    }
+    .head{
+        text-align: center;
+        /* align-content: center; */
+        width: 80vw;
+    }
+    .image{
+        align-self: center;
+        margin: 10px auto;
+    }
+    .logo-side{
+        width: 80vw;
+    }
+    p.text{
+        /* word-wrap: none; */
+        width: 80vw;
+        /* align-self: start !important; */
     }
 }

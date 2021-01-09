@@ -25,13 +25,20 @@
 </div>
 <!-- nav-right -->
 <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">ABOUT US</a>
-  <a href="#contact">DELIVERY</a>
-  <a href="#about">CONTACT US</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fas fa-bars"></i>
-  </a>
+  <nav id="headerNav">
+    <div class="header__main-nav--hamburger">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+    </div>
+    <ul class="headerNavLinks">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#news">ABOUT US</a></li>
+      <li><a href="#contact">DELIVERY</a></li>
+      <li><a href="#about">CONTACT US</a></li>
+    </ul>
+  </nav>
+  
 </div>
 
 <!-- NAVBAR ENDS -->
@@ -52,7 +59,7 @@ and sustainable activities.</div></div>
 
     <div class="about">
       <div class="logo-side">
-    <div class="image"></div>
+    <div class="image"><img src="img/deslogo.png" alt=""></div>
   </div>
    <div class="content">
   <h2 class="head">ABOUT THE PROJECT</h2>
@@ -99,15 +106,18 @@ and sustainable activities.</div></div>
     
          
 <script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script> 
+  const hamburgerContainer = document.querySelector("#headerNav");
+const hamburger = document.querySelector(".header__main-nav--hamburger");
+const links = document.querySelectorAll(".headerNavLinks li");
+
+hamburger.addEventListener("click", () => {
+hamburgerContainer.classList.toggle("clicked");
+links.forEach((link) => {
+link.classList.toggle("fade");
+});
+});
+
+</script>
        
 </body>
 </html>
