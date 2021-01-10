@@ -16,6 +16,7 @@
 
 
 <!-- NAVBAR STARTS  -->
+<div id="navbar">
 <div class="nav-right visible-xs">
   <div class="button" id="btn">
     <div class="bar top"></div>
@@ -25,34 +26,45 @@
 </div>
 <!-- nav-right -->
 <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">ABOUT US</a>
-  <a href="#contact">DELIVERY</a>
-  <a href="#about">CONTACT US</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <a href=" " class="active">HOME</a>
+  <a href="#home">BOOK NOW</a>
+  <a href="#au">ABOUT US</a>
+  <a href="#cont">CONTACT US</a>
+  <a href="javascript:void(0);" class="icon" onclick="mFunction()">
     <i class="fas fa-bars"></i>
   </a>
 </div>
-
+</div>
 
 
  
 
     <!-- FLIPPERS -->
+    <span id="home">
+
     <div class="delivery">
   
   <div class="card">
     <img src="img/orders.png" alt="Avatar" style="width:80%" >
     <div class="container">
-      <h4><b>ORDER NOW</b></h4> 
-      <p>93993493493439</p> 
+      <h4><b>BOOK NOW</b></h4>
+    <div class="call_part">
+      <div class="call_logo"></div>
+      <div class="bookings">
+     
+        <p>93993493493439</p> 
+        <p>93993493493439</p> 
+        <p>93993493493439</p> 
+       </div> 
+    </div>
+    
     </div>
   </div>
-  
+
   </div>
-
+</span>
 <!-- FLIPPERS END -->
-
+<span id="au">
 <div class="about">
   <div class="logo-side">
 <div class="image"></div>
@@ -64,36 +76,79 @@
 </p>
 </div>
 </div>
+</span>
 
-
-<!-- 
-<hr class="verticalline">
-<div class="contact">CONTACT US</div>  -->
-
-<!-- MEDIA HANDLES -->
-<!-- <section id="handles">
-	<div class="media">
-	<ul>
-		<li><a href="https://www.facebook.com/groups/1778044795807096/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li> 
-		<li><a href="https://www.instagram.com/eco_club_nits/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-		<li><a href="https://www.linkedin.com/in/dhritiraj-borah-a0073b192"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-		<li><a href="https://twitter.com/DhritirajBorah1?fbclid=IwAR0Ipo_QqyT6x2Hy51bWX7HyQbY2dsKh8vj-SZyuUtd_O-iYg_jm-Kacx9A"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-	</ul>
+      
+<!--Footer STARTS -->
+<span id="#cont">
+<div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
+  <footer>
+      <div class="row my-5 justify-content-center py-5">
+          <div class="col-11">
+            <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+              <h3 class="text-muted mb-md-0 mb-5 bold-text padding">ROTO</h3>
+          </div>
+              <div class="row floating-left">
+                 
+                  <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                      <h2 class="mb-3 mb-lg-4 bold-text "><b>CONTACT NUMBERS</b></h2>
+                      <ul class="list-unstyled">
+                          <li>4853584535734</li>
+                          <li>4853584535734</li>
+                          <li>4853584535734</li>
+                          
+                      </ul>
+                  </div>
+                  <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                      <h2 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h2>
+                      <p class="mb-1">605, RATAN ICON BUILDING</p>
+                      <p>SEAWOODS SECTOR</p>
+                  </div>
+              </div>
+              <div class="row floating-right">
+                 
+                  <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                      <h2 class="mt-55 mt-2 text-muted bold-text"><b>Pinky Panda</b></h2><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> anirudh@gmail.com</small>
+                  </div>
+                  <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                      <h2 class="text-muted bold-text"><b>Tukan Daa</b></h2><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> rishab@gmail.com</small>
+                  </div>
+                  <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                    <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#174;</span> ROTO All Rights Reserved.</small>
+                </div>
+              </div>
+          </div>
+      </div>
+  </footer>
 </div>
-</section> -->
+</span>
+<!-- ends -->
 
-    
-         
 <script>
-function myFunction() {
+function mFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
     x.className = "topnav";
   }
+
 }
-</script> 
+</script>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>  
        
 </body>
 </html>

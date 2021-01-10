@@ -49,12 +49,13 @@ body {
 .logo-side {
     width: 40%;
 }
-*/ .about {
+.about {
     display: flex;
     width: 100vw;
-    height: 100vh;
-    /* margin: auto auto; */
+    height: 35vh;
     padding-top: 10rem;
+    margin-bottom: 0;
+    padding-bottom: 10%;
 }
 .logo-side {
     width: 40%;
@@ -146,17 +147,6 @@ body {
     position: absolute;
     left: 31vw;
 }
-@media only screen and (max-width: 1200px) {
-    .media {
-        left: 31vw;
-    }
-}
-
-@media only screen and (max-width: 960px) {
-    .media {
-        left: 23vw;
-    }
-}
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -197,6 +187,7 @@ html {
 .topnav {
     overflow: hidden;
     background-color: rgb(34, 110, 250);
+    width: 100%;
 }
 
 .topnav a {
@@ -247,4 +238,73 @@ html {
         display: block;
         text-align: left;
     }
+}
+#navbar {
+    z-index: 10;
+    width: ;
+}
+
+/* Stickiness */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+/* ends */
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+.container-fluid {
+    overflow: hidden;
+    margin-top: 250px;
+    background: #262626;
+    color: #627482 !important;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+small {
+    font-size: calc(
+        12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))
+    ) !important;
+}
+
+.bold-text {
+    color: #989c9e !important;
+}
+
+.mt-55 {
+    margin-top: calc(
+        50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))
+    ) !important;
+}
+
+h3 {
+    font-size: calc(
+        34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))
+    ) !important;
+}
+
+.social {
+    font-size: 21px !important;
+}
+
+.rights {
+    font-size: calc(
+        10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))
+    ) !important;
+}
+.floating-left {
+    float: left;
+    padding-bottom: 2%;
+    padding-left: 1%;
+}
+.floating-right {
+    text-align: center;
+    padding-bottom: 2%;
+}
+.padding {
+    padding-left: 1%;
 }
