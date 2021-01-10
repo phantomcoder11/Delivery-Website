@@ -260,8 +260,6 @@ html {
         cursor: pointer;
         background-color: rgb(34, 110, 250);;
         padding: 0.5rem;
-        border-top-left-radius: 30%;
-        border-bottom-left-radius: 30%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
